@@ -1,8 +1,9 @@
 //This macro calculates the ratio of two images to get the mean cleavage efficiency of CCF4-AM. 
 //The macro includes Ratio Plus plugin by Paulo Magalh�es (https://imagej.nih.gov/ij/plugins/ratio-plus.html).
-// Ver 1.5, 2022
+// Ver 1.5, 2022 - Adapted and edited from "RatioFRETsigma2_v6.ijm" in ALM-i3S_macros repository.
 
-run("3-3-2 RGB");
+
+run("3-3-2 RGB");
 title = getTitle;
 run("Subtract Background...", "rolling=50 sliding stack");
 rename("Image");
